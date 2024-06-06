@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>absolute and relative</title>
+<style>
+.parent{
+background:red;
+height:700px;
+width:500px;
+margin:auto;
+position:relative;
+}
+.child{
+height:25%;
+width:30%;
+position:absolute;
+transition:all 4s;
+}
+.child1{
+background:khaki;
+right:0;
+}
+.child2{
+background:rebeccapurple;
+bottom:0;
+}
+.child3{
+background:blue;
+bottom:0;
+right:0;
+}
+.child4{
+background:yellow;
+}
+.child5{
+background:black;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+clip-path:circle();
+}
+.parent:hover .child3{
+transform:translateY(-525px);
+background:white;
+}
+.parent:hover .child2{
+transform:translateX(350px);
+background:green;
+}
+.parent:hover .child1{
+transform:translateX(-350px);
+background:pink;
+}
+.parent:hover .child4{
+transform:translate(175px,262.5px);
+background:lime;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+<div class="child1 child"></div>
+<div class="child2 child"></div>
+<div class="child3 child">
+<img width="100%" height="100%" src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?cs=srgb&dl=pexels-mikebirdy-120049.jpg&fm=jpg">
+</div>
+<div class="child4 child"></div>
+<div class="child5 child"></div>
+</div>
+</body>
+</html>
